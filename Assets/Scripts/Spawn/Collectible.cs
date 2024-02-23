@@ -3,14 +3,11 @@ using UnityEngine;
 
 public class Collectible : Entity
 {
-    [SerializeField] private int _points = 1;
-    [SerializeField] private string _collectorTag = "Player";
-
-    public int Points => _points;
+    [SerializeField] protected string _collectorTag = "Player";
 
     public static event Action<Collectible> OnCollected;
 
-    private void OnTriggerEnter(Collider other)
+    protected void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag(_collectorTag))
         {

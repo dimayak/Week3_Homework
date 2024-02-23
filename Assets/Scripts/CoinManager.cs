@@ -28,10 +28,13 @@ public class CoinManager : MonoBehaviour
     {
         Collectible.OnCollected -= Collectible_OnCollected;
     }
-    
 
     private void Collectible_OnCollected(Collectible collectible)
     {
+        if (collectible.GetType() != typeof(Coin)) {
+            return;
+        }
+
         _currentCoinsCount++;
         OnCurrentCoinsChanged_Invoke();
         if (_currentCoinsCount >= _totalCoinsCount)

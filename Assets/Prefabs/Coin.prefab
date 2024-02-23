@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7869572548077925434}
   - component: {fileID: 4629551227767081216}
   - component: {fileID: 8023817525479981618}
-  - component: {fileID: 879730241095329304}
   - component: {fileID: 5666344596954266150}
+  - component: {fileID: 5181886625893518676}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -111,20 +111,6 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
---- !u!114 &879730241095329304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3991315786596264910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2513a50342e294fff9b02e61d6960c2e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _points: 1
-  _collectorTag: Player
 --- !u!114 &5666344596954266150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,3 +125,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _rotationSpeed: 200
   _rotateAxis: {x: 1, y: 0, z: 0}
+--- !u!114 &5181886625893518676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3991315786596264910}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400e513cc22084fae8b9e9e831f2c51a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collectorTag: Player

@@ -1,13 +1,8 @@
 using UnityEngine;
 
-public class Coin : MonoBehaviour
+public class Coin : Collectible
 {
-    [SerializeField] private float _rotationSpeed = 200.0f;
+    [SerializeField] private int _amount = 1;
 
-    void Update()
-    {
-        // Rotation
-        float angle = _rotationSpeed * Time.deltaTime;
-        transform.Rotate(angle, 0, 0);
-    }
+    public int Amount => _amount;
 }
